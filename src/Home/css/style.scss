@@ -1,0 +1,71 @@
+#root {
+    .home {
+        background-color: #13333A;
+        min-height: 41.5rem;
+
+        .my-container {
+            margin-top: 50px;
+            .row {
+                min-height: 50vh;
+
+                .left-col-2 {
+                    display: flex;
+                    align-items: center;
+
+                    .box {
+                        display: inline;
+                        margin-top: 10rem;
+                        h1 {
+                            color: white;
+                            font-size: 4rem;
+                        }
+    
+                        p {
+                            color: white;
+                            width: 24rem;
+                            margin: 20px 0;
+                        }
+    
+                        button {
+                            background-color: white;
+                            color: black;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 10px 20px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                .right-col-2 {
+                    background-image: url(../img/cowboy.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 10rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:991px) {
+    #root {
+        .home {
+            .container {
+                .row {
+                    .left-col-2 {
+                        .box {
+                            h1 {
+                                font-size: 3rem;
+                            }
+
+                            p {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

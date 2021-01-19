@@ -1,0 +1,63 @@
+#root .home {
+  background-color: #13333A;
+  min-height: 41.5rem;
+}
+
+#root .home .my-container {
+  margin-top: 50px;
+}
+
+#root .home .my-container .row {
+  min-height: 50vh;
+}
+
+#root .home .my-container .row .left-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .home .my-container .row .left-col-2 .box {
+  display: inline;
+  margin-top: 10rem;
+}
+
+#root .home .my-container .row .left-col-2 .box h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+#root .home .my-container .row .left-col-2 .box p {
+  color: white;
+  width: 24rem;
+  margin: 20px 0;
+}
+
+#root .home .my-container .row .left-col-2 .box button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+#root .home .my-container .row .right-col-2 {
+  background-image: url(../img/cowboy.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 10rem !important;
+}
+
+@media (max-width: 991px) {
+  #root .home .container .row .left-col-2 .box h1 {
+    font-size: 3rem;
+  }
+  #root .home .container .row .left-col-2 .box p {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

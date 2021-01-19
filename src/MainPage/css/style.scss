@@ -1,0 +1,104 @@
+#root {
+    .container-fluid {
+        background-color: #13333A;
+        .container {
+            .row {
+                .col-md-6 {
+                    min-height: 60px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .left-col {
+                    display: flex;
+                    justify-content: space-between;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 25px;
+                    }
+
+                    .menu-icon {
+                        display: none;
+                        i {
+                            color: white;
+                        }
+                    }
+                }
+
+                .right-col {
+                    .navbar {
+                        margin-left: auto;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            margin: 0px 20px;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .active-menu {
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px 15px;
+    }
+}
+
+@media(max-width:991px) {
+    #root {
+        .container-fluid{
+            .container {
+                .row {
+                    .right-col {
+                        .navbar {
+                            a {
+                                margin: 0px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #root {
+        .container-fluid {
+            .container {
+                .row {
+                    .left-col {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+
+                        .menu-icon {
+                            display: block;
+                        }
+                    }
+                    .right-col {
+                        .navbar {
+                            display: none;
+                        }
+
+                        .active {
+                            display: flex;
+                            flex-direction: column;
+
+                            a {
+                                margin: 20px 0px;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

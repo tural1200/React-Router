@@ -1,0 +1,12 @@
+.FAQ {
+    width: 100%;
+    min-height: 41.5rem;
+    background-color: #13333A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FAQ h1 {
+    color: white;
+}

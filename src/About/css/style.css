@@ -1,0 +1,13 @@
+.about {
+    background-color: #13333A;
+    width: 100%;
+    min-height: 41.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    color: white;
+
+}
